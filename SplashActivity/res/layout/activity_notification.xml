@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_statusbar_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_root_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tab_titlebar"
+            layout="@layout/common_header_layout" />
+
+        <com.cyou.cma.clockscreen.widget.material.LLinearLayout
+            android:id="@+id/l_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp"
+            android:paddingTop="22dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_application_message"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/notification_application_message_summary"
+                    android:textColor="#8a000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.cyou.cma.clockscreen.widget.DontPressedWithParentCheckBox
+                android:id="@+id/toggle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:button="@drawable/checkbox_background" />
+        </com.cyou.cma.clockscreen.widget.material.LLinearLayout>
+
+        <View
+            android:id="@+id/preference_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/settings_list_diver_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="3dp"
+                android:text="@string/choose"
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/app_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:textColor="#03a9f4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apps"
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_all"
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/select_all"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:button="@drawable/checkbox_background" />
+        </LinearLayout>
+
+        <com.cyou.cma.clockscreen.widget.InstalledLayout4Notification
+            android:id="@+id/notification_install_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

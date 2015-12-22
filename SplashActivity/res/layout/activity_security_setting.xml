@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_statusbar_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_root_bg" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:text="@string/secirotysettings_label_level"
+                        android:textColor="@color/color_black87"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/secirotysettings_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/secirotysettings_level_a" />
+
+                    <TextView
+                        android:id="@+id/secirotysettings_hint_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secirotysettings_hint_level"
+                        android:textColor="@color/color_black54"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/settings_list_diver_bg" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceStatus
+                    android:id="@+id/secirotysettings_lockscreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    locker:preference_show_divider="false"
+                    locker:preference_summary="@string/secirotysettings_lockscreen_summary"
+                    locker:preference_title="@string/secirotysettings_lockscreen_title" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceStatus
+                    android:id="@+id/secirotysettings_applock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    locker:preference_show_divider="false"
+                    locker:preference_summary="@string/secirotysettings_applock_summary"
+                    locker:preference_title="@string/secirotysettings_applock_title" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceStatus
+                    android:id="@+id/secirotysettings_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    locker:preference_show_divider="false"
+                    locker:preference_summary="@string/secirotysettings_mail_summary"
+                    locker:preference_title="@string/secirotysettings_mail_title" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/headerbar_bottom_divider" />
+    </FrameLayout>
+
+</LinearLayout>

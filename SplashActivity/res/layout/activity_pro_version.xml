@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerbar_backbtn_height"
+        android:background="@color/settings_statusbar_bg" />
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_header_layout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/settings_root_bg" >
+
+            <LinearLayout
+                android:id="@+id/pro_done_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginTop="58dp"
+                    android:text="@string/pro_vip"
+                    android:textColor="#03a9f4"
+                    android:textSize="86sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/pro_done_hint"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/font_size_16" />
+
+                <com.cyou.cma.clockscreen.widget.material.LButton
+                    android:id="@+id/pro_done_ok"
+                    android:layout_width="218dip"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="@string/ok"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_size_16"
+                    locker:widget_background="@drawable/statebutton_download"
+                    locker:widget_delayclick="true" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/pro_update_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@drawable/icon_scrollbar" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/PreferenceCategoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_token_title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/desktop_setting_item_height"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/pro_describe_token"
+                        android:textColor="@color/selecter_settings_item_text"
+                        android:textSize="@dimen/preference_normal_title" />
+
+                    <EditText
+                        android:id="@+id/pro_token"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/selecter_bg_feedback_edittext"
+                        android:hint="@string/pro_token_hint"
+                        android:maxLines="2"
+                        android:padding="18dp"
+                        android:textColor="#de000000"
+                        android:textColorHint="#42000000"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+
+                    <com.cyou.cma.clockscreen.widget.material.LButton
+                        android:id="@+id/pro_update_token"
+                        android:layout_width="218dip"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="@string/pro_btn_token"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/font_size_16"
+                        locker:widget_background="@drawable/statebutton_download" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/settings_list_diver_bg" />
+
+                    <TextView
+                        style="@style/PreferenceCategoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_vip" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/desktop_setting_item_height"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/pro_describe"
+                        android:textColor="@color/selecter_settings_item_text"
+                        android:textSize="@dimen/preference_normal_title" />
+
+                    <com.cyou.cma.clockscreen.widget.material.LButton
+                        android:id="@+id/pro_update_gp"
+                        android:layout_width="218dip"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="@string/pro_btn_gp"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/font_size_16"
+                        locker:widget_background="@drawable/statebutton_apply"
+                        locker:widget_delayclick="true" />
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/headerbar_bottom_divider" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

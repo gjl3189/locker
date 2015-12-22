@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:preference="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_statusbar_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_root_bg" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/PreferenceCategoryStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_base_info" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                    android:id="@+id/themesettings_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    preference:preference_show_divider="false"
+                    preference:preference_summary="@string/settings_lockscreen_wallpaper_summary"
+                    preference:preference_title="@string/settings_lockscreen_wallpaper" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceCheckBox
+                    android:id="@+id/themesettings_vibrate_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    preference:preference_show_divider="false"
+                    preference:preference_title="@string/settings_lockscreen_tools_vibrate" />
+
+                <com.cyou.cma.clockscreen.widget.material.PreferenceCheckBox
+                    android:id="@+id/themesettings_sound_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    preference:preference_title="@string/settings_lockscreen_tools_sound" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/headerbar_bottom_divider" />
+    </FrameLayout>
+
+</LinearLayout>

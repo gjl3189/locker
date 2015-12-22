@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Pop Locker</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_tips">Tips</string>
+
+    <!-- 默认锁屏 -->
+    <string name="charge_values">%1$d%%</string>
+    <string name="msgcenter_tip_title">Tips</string>
+    <string name="msgcenter_call_title">Missed calls</string>
+    <string name="msgcenter_sms_title">Unread messages</string>
+    <string name="msgcenter_tip_content">Swipe to left to delete message. Swipe to right to open message.</string>
+    <string name="msgcenter_call_content">%1$d missed call</string>
+    <string name="msgcenter_sms_content">%1$d unread message</string>
+    <string name="msgcenter_call_contents">%1$d missed calls</string>
+    <string name="msgcenter_sms_contents">%1$d unread messages</string>
+    <string name="lock_app_not_exists">Corresponding APP not found</string>
+    <string name="lock_open_app_faild">Failed to open APP</string>
+    <!-- Settings -->
+    <string name="settings_password">Password</string>
+    <string name="settings_app_lock">App Lock</string>
+    <string name="settings_base_info">General Setting</string>
+    <string name="settings_user_lockscreen">Activate Pop Locker</string>
+    <string name="settings_system_lockscreen">Close System Lock</string>
+    <string name="settings_system_lockscreen_summary">Setting "Screen lock - none" to prevent double screen lock</string>
+    <string name="settings_lockscreen_wallpaper">Wallpaper</string>
+    <string name="settings_lockscreen_wallpaper_summary">Choose lock screen wallpaper</string>
+    <string name="settings_lockscreen_tools_vibrate">Vibration</string>
+    <string name="settings_lockscreen_tools_sound">Sound</string>
+    <string name="settings_lockscreen_tools_only_theme_ocean">This theme does not support unlock sound</string>
+    <string name="settings_auto_lock">Auto-lock</string>
+    <string name="settings_more">More Setting</string>
+    <string name="settings_password_backup">Password backup</string>
+    <string name="settings_pro_title">Advanced function</string>
+    <string name="tip_password_backup">Please enter your email address, password will be backed up to your email</string>
+    <string name="settings_guide_settings_dialog_title">Tips</string>
+    <string name="settings_enable_service"> Pop Locker is not open, will you open it before exiting?</string>
+    <string name="settings_enable_service_dialog_ok">Open</string>
+    <string name="settings_enable_service_dialog_cancel">Exit</string>
+
+    <!-- 壁纸主题 -->
+    <string name="settings_lockscreen_wallpaper_notsuport">Current theme doesn’t support wallpaper change</string>
+    <string name="wallpaper_type_restore">Default</string>
+    <string name="wallpaper_type_system">Wallpaper</string>
+    <string name="wallpaper_type_photo">Photo</string>
+    <string name="settings_theme_or_wallpaper_success">Successfully set, press power key to check</string>
+    <string name="dialog_delete_wallpaper_msg">Delete %1$d selected picture?</string>
+    <string name="wallpaper_toast_save_failed">Failed save picture!</string>
+
+    <!-- 升级 -->
+    <string name="SdCard_Notexisting">No SD card</string>
+
+    <!-- feedback -->
+    <string name="userfeedback_your_face_problem_info">How can we make Pop Locker better?</string>
+    <string name="userfeedback_your_address_info">How can we contact you?</string>
+    <string name="userfeedback_label">Feedback</string>
+    <string name="userfeedback_contact_hint">E-Mail、Skype or other</string>
+    <string name="userfeedback_no_text">Your valuable feedback will be appreciated.</string>
+    <string name="user_feedback_send">Sending.</string>
+    <string name="userfeedback_failed">Sorry, something went wrong</string>
+    <string name="userfeedback_success">We have received your feedback, thank you for your precious opinions!</string>
+
+    <!-- http error message -->
+    <string name="http_service_error">server error!</string>
+    <string name="http_network_error">network error!</string>
+    <string name="http_data_error">data error!</string>
+    <string name="http_no_network_error">Oops, no network. Please check network connection.</string>
+    <!-- 弹出删除对话框 -->
+    <string name="dialog_title_delete">Delete</string>
+    <string name="theme_native_dialog_content">Delete this theme?</string>
+    <string name="live_wapaper_native_dialog_yes">OK</string>
+    <string name="live_wapaper_native_dialog_no">Cancel</string>
+    <!-- 通用字符串 -->
+    <string name="launcher_loading_more_text">Loading&#8230;</string>
+    <string name="setnetwork">Network unavailable, please check.</string>
+    <!-- 详情界面 -->
+    <string name="theme_details">Theme Details</string>
+    <string name="designer">Designer :</string>
+    <string name="size">Size :</string>
+    <string name="date">Date :</string>
+    <string name="download">Downloads :</string>
+    <string name="theme_introduction">Theme Introduction:</string>
+    <!-- 应用 下载 当前应用 按钮 文字 -->
+    <string name="state_button_download">Download</string>
+    <string name="state_button_apply">Apply</string>
+    <string name="state_button_use">Applied</string>
+    <!-- 下载提示相关 -->
+
+    <!-- 错误提示相关 -->
+    <string name="error_divice_not_found">Please Insert SDcard!</string>
+    <string name="download_mark">Downloaded</string>
+    <string name="cannot_connect_server">Unable to connect server, please try again later</string>
+    <string name="timeout_request">Request time out, please try later</string>
+    <string name="network_exception">Network anomaly, please try later</string>
+    <string name="request_exception">Request anomaly, please try later</string>
+    <string name="hint_network_error">Network error\n Press screen to retry！</string>
+    <!-- core 里面的string -->
+    <string name="state_unknown">unknown</string>
+    <string name="mms">Multimedia Message</string>
+    <string name="keyguard_service">Keyguard Service</string>
+    <string name="no_more_data">No More Data</string>
+    <string name="applock_cannot_add_more">Basic version can at most add 15 Apps. To add more Apps, please update to VIP in advanced function</string>
+    <string name="password_keyboard_label_symbol_key">"?123"</string>
+    <string name="password_keyboard_label_alpha_key">"ABC"</string>
+    <string name="password_keyboard_label_alt_key">"ALT"</string>
+    <string name="lockpattern_restart_button_text">Redraw</string>
+    <string name="lockpattern_confirm_button_text">Confirm</string>
+    <string name="lockpattern_recording_inprogress">Release finger when done</string>
+    <string name="lockpattern_recording_incorrect_too_short">Link at least <xliff:g id="number">%d</xliff:g> dots</string>
+    <string name="lockpattern_retry_button_text">Retry</string>
+    <string name="lockpattern_recording_intro_header">Draw an unlock pattern</string>
+    <string name="lockpattern_settings_help_how_to_record">How to draw an unlock pattern</string>
+    <string name="lockpattern_need_to_confirm">Draw pattern again to confirm</string>
+    <string name="lockpattern_pattern_confirmed_header">Your new unlock pattern</string>
+    <string name="lockpattern_need_to_unlock_wrong">Passwords disagree, please re-enter</string>
+    <string name="lockpattern_need_to_unlock">Confirm unlock pattern</string>
+    <string name="lockpattern_need_to_app_lock">Default is lockscreen pattern</string>
+    <!-- Lock Pattern settings -->
+    <!-- Header on first screen of choose password/PIN flow -->
+    <string name="lockpassword_choose_your_password_again">Please re-enter password</string>
+    <string name="lockpassword_choose_your_password_header">Please enter password</string>
+    <!-- Header on first screen of choose password/PIN flow -->
+    <string name="lockpassword_choose_your_pin_header">Please enter password</string>
+    <!-- Header on password confirm screen -->
+    <string name="lockpassword_confirm_your_password_header">Please enter password</string>
+    <!-- Header on password confirm screen -->
+    <string name="lockpassword_confirm_your_pin_header"> Please enter password</string>
+    <!-- Header on password confirm screen if second password doesn't match the first. -->
+    <string name="lockpassword_confirm_passwords_dont_incorrect">Incorrect password,please re-enter</string>
+    <string name="lockpassword_confirm_passwords_dont_match">Passwords disagree, please re-enter</string>
+    <!-- Header on pin confirm screen if second pin doesn't match the first. -->
+    <!-- Toast shown if setting password was successful -->
+    <!-- Toast shown if setting PIN was successful -->
+    <!-- Toast shown if setting pattern was successful -->
+    <!-- Hint shown in dialog screen when password is too short -->
+    <!-- Hint shown in dialog screen when PIN is too short -->
+
+    <!-- Hint shown after minimum password criteria is met -->
+
+    <!-- Hint shown after minimum password criteria is met -->
+    <string name="lockpassword_continue_label">Continue</string>
+
+    <!-- Error shown in popup when password is too long -->
+    <!-- Error shown in popup when PIN is too long -->
+    <string name="lockpassword_pin_too_long">PIN can be no longer than %d digits</string>
+
+    <!-- Error shown when in PIN mode and user enters a non-digit -->
+    <string name="lockpassword_pin_contains_non_digits">PIN must contain only digits 0-9</string>
+
+    <!-- Error shown when in PASSWORD mode and user enters an invalid character -->
+    <string name="lockpassword_illegal_character">Password contains an illegal character</string>
+
+    <!-- Error shown when in PASSWORD mode and password is all digits -->
+    <string name="lockpassword_password_requires_alpha">Password must contain at least one letter</string>
+
+    <!-- Error shown when in PASSWORD mode and password doesn't contain any digits -->
+    <string name="lockpassword_password_requires_digit">Password must contain at least one digit</string>
+
+    <!-- Error shown when in PASSWORD mode and password doesn't contain any symbols -->
+
+    <!-- Label for ChoosePassword/PIN OK button -->
+    <string name="lockpassword_ok_label">OK</string>
+
+    <!-- Label for ChoosePassword/PIN OK button -->
+    <string name="wrong_pattern_unlock">Wrong pattern</string>
+    <string name="draw_pattern_unlock">Draw pattern to unlock screen</string>
+    <string name="draw_pattern_app_lock">Draw pattern to open the app</string>
+    <string name="send_text">Send</string>
+    <string name="send_not_text">Not send</string>
+    <string name="backup_successful">Password backup successful</string>
+    <string name="backup_failed">Password backup failed</string>
+    <string name="password_set_successful">Password set successful</string>
+    <string name="mimasuo">Password</string>
+    <string name="mimasuoleixing">Password type</string>
+    <string name="wumima">None</string>
+    <string name="shuzimima">PIN</string>
+    <string name="tuxingmima">Pattern</string>
+    <string name="yanzhengtuan">Confirm pattern</string>
+    <string name="yanzhengmima">Confirm password</string>
+
+    <!-- App Lock -->
+    <string name="applock_title">App Lock</string>
+    <string name="new_mode">New</string>
+    <string name="local_mode">Local</string>
+    <string name="app_setting">Setting</string>
+    <string name="app_lock">App Lock</string>
+    <!-- Pro Feature -->
+    <string name="pro_vip">VIP</string>
+    <string name="pro_describe">Update to VIP Now! Enjoy unlimited experience for locked Apps</string>
+    <string name="pro_btn_gp">Buy</string>
+    <string name="pro_token_title">Activate activation code</string>
+    <string name="pro_describe_token">Like our Facebook page: \nhttp://www.facebook.com/poplockerteam, activation code will be issued occasionally</string>
+    <string name="pro_token_hint">Please enter activation code to activate VIP function</string>
+    <string name="pro_btn_token">OK</string>
+    <string name="pro_token_invalid">Activation code is invalid</string>
+    <string name="pro_done_hint">Enjoy our VIP service now. More fancy funcitons for VIP edition will be released!</string>
+    <string name ="default_password">Default password is 0000</string>
+     <string name ="default_password_lockscreen">Default is lockscreen PIN </string>
+     <string name="confirm_app_lock_pattern">App Lock</string>
+     
+     <string name="levela">Pop Locker has fully launched privacy protect mode!</string>
+    <string name="levelb">Perfectly protect your privacy with only one steps!</string>
+    <string name="levelc">Perfectly protect your privacy with only two steps!</string>
+    <string name="leveld">Not enable privacy protection. Tap to enable it!</string>
+    <string name="lockscreen_bean">Password</string>
+    <string name="applock_bean">AppLock</string>
+    <string name="mailbox_bean">Mailbox</string>
+    <string name="security_bean">Security</string>
+    <string name="security_level">Security Level</string>
+    <string name="security_setting">Security Setting</string>
+    <string name="security_setting_lockscreen">Lockscreen</string>
+    <string name="security_setting_applock">AppLock</string>
+    <string name="security_setting_mailbox">Security Mailbox</string>
+    <string name="new_mode2">New Theme</string>
+    <string name="local_mode2">Local Theme</string>
+    <string name="mailbox_suceess">Mailbox and password has been saved successfully</string>
+    <string name="mailbox_failed">Mailbox and password save failed</string>
+    <string name="next">Next</string>
+    <string name="password_setting">Password Setting</string>
+    <string name="password_setting_tip">Enter password to unlock screen &amp; AppLock.</string>
+    <string name="applock_setting_tip">Tap to choose Apps to be locked. We’ll soundly protect it. You can at most lock 15 Apps.</string>
+    <string name="security_mailbox_backup">Security Mailbox</string>
+    <string name="network_unavailable">Network is not available,try out later!</string>
+    <string name="guide_info">Tap for security settings to perfectly protect your phone and privacy!</string>
+  <!-- 评分相关 -->
+    <string name="settings_rate">Rate</string>
+    <string name="dialog_grade_title">Rate PopLocker</string>
+    <string name="dialog_grade_message">Have fun with Pop Locker! Please give us 5 stars if you enjoy it.</string>
+    <string name="dialog_grade_ok">Yes</string>
+    <string name="dialog_grade_cancel">No</string>
+
+    <!-- 默认锁屏首次启动引导 -->
+    <string name="lockscreen_tip_setting">Tap to open Locker setting</string>
+    <string name="default_hint_wallpaper">Choose your favorite pic as wallpaper\n in Pop Locker Settings</string>
+    <!-- 安全锁设置界面 -->
+    <string name="secirotysettings_label_level">Your current security level is</string>
+    <string name="secirotysettings_hint_level">Finish the following steps to upgrade</string>
+    <string name="secirotysettings_lockscreen_title">Password Setting</string>
+    <string name="secirotysettings_lockscreen_summary">Set the Password protect your phone</string>
+    <string name="secirotysettings_applock_title">AppLock Setting</string>
+    <string name="secirotysettings_applock_summary">Prevent the application is opened by other users</string>
+    <string name="secirotysettings_mail_title">Mailbox Setting</string>
+    <string name="secirotysettings_mail_summary">Help you retrieve your password</string>
+
+    <!-- 邮件备份界面 -->
+    <string name="mailbackup_title">Mailbox Setting</string>
+    <string name="mailbackup_hint">Please enter your security mailbox,password will be backed up to your mailbox.</string>
+    <string name="mailbackup_send">Send</string>
+    
+
+</resources>

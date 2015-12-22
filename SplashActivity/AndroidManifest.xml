@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cynad.cma.locker"
+    android:versionCode="20"
+    android:versionName="1.4.6" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 其他权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 华为跳转系统显示设置的权限 -->
+    <uses-permission android:name="huawei.android.permission.HW_SIGNATURE_OR_SYSTEM" />
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <uses-permission android:name="locker.permission.service" />
+
+    <permission
+        android:name="locker.permission.WALLPAPER"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="locker.permission.service"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.cyou.cma.clockscreen.LockApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.cyou.cma.clockscreen.activity.ActivityOfMyChoice"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/act_in_anim_no_title" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="AdjustAppToken"
+            android:value="7ucmb4karxmq" />
+        <meta-data
+            android:name="AdjustLogLevel"
+            android:value="info" />
+        <meta-data
+            android:name="AdjustEnvironment"
+            android:value="production" /> <!-- TODO: change to 'production' -->
+        <meta-data
+            android:name="AdjustEventBuffering"
+            android:value="true" />
+
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ActivityOfMyChoice"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.LocalThemeDetailActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.OnlineThemeDetailActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.SecurityActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.QuickContactsActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.SplashActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:taskAffinity="com.cynad.cma.locker" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.LockMainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.SettingActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.Holo.NoActionBar.Alpha.Activity" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ThemeSettingActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.QuickAppsActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmAppLockPattern"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmAppLockPattern2"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordApplock"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmLockPattern"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordLockscreen"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.SelectFolderActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordAppLockDefault"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordApplock4lLockScreen"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmAppLockPattern4Lock"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordAppLockDefault2"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        -->
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmPinPasswordLockscreen4AppLock"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ConfirmLockPattern4AppLock"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.WallpaperActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.NotifySettingDialogActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.NotificationActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cynad.cma.locker.notification" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.CustomWallpaperActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ChooseLockPattern"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ChooseLockPassword"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.FeedBackActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.DismissActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.Translucent"
+            android:windowIsTranslucent="true"
+            android:windowNoTitle="true" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.PwdSettingActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" />
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.SecuritySettingActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" />
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.PatternAppLockActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker2" />
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.PinAppLockActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker3"
+            android:theme="@style/Theme.Translucent" />
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.AppLockSettingActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.ProVersionActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker"
+            android:theme="@style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.GuidePinActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.GuideApplockActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+        <activity
+            android:name="com.cyou.cma.clockscreen.activity.GuideBackupActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cynad.cma.locker" >
+        </activity>
+
+        <service android:name="com.cyou.cma.clockscreen.service.AppLockService" />
+        <service android:name="com.cyou.cma.clockscreen.service.PasswordBackupService" />
+        <service android:name="com.cyou.cma.clockscreen.service.MailBoxService" />
+        <service
+            android:name="com.cyou.cma.clockscreen.service.KeyguardService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/keyguard_service"
+            android:permission="locker.permission.service"
+            android:priority="1000" >
+            <intent-filter>
+                <action android:name="com.cynad.cma.keyguard" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.cyou.cma.clockscreen.sqlite.WallPaperProvider"
+            android:authorities="com.cynad.cma.lockerwallpaper"
+            android:exported="true"
+            android:multiprocess="true"
+            android:permission="locker.permission.WALLPAPER" >
+
+            <!-- android:permission="com.cyou.cma.permission.Wallpaper" -->
+        </provider>
+
+        <service
+            android:name="com.cyou.cma.clockscreen.notification.KeyguardNotificationService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            
+            <intent-filter>
+                
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            
+            </intent-filter>
+            
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/keyguard_accessibility_service_config" />
+        
+        </service>
+        <service
+            android:name="com.cyou.cma.clockscreen.notification.KeyguardNotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            
+            <intent-filter>
+                
+                <action android:name="android.service.notification.NotificationListenerService" />
+            
+            </intent-filter>
+        
+        </service>
+
+        <receiver android:name="com.cyou.cma.clockscreen.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="com.cyou.cma.clocker.action.restart" />
+                <action android:name="com.cyou.cma.clocker.action.restart.fromtheme" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cyou.cma.clockscreen.receiver.PackageChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.UNINSTALL_PACKAGE" />
+                <action android:name="android.intent.action.INSTALL_PACKAGE" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.adjust.sdk.ReferrerReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- 友盟sdk相关 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5358ca2e56240b7fab029e2d" >
+
+            <!-- 5358ca2e56240b7fab029e2d ceshi -->
+            <!-- 541bce91fd98c5333b0439e5 zhengshi -->
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="auto_replaced_channel_value" />
+        <!-- 10011 google -->
+        <!-- auto_replaced_channel_value -->
+    </application>
+
+</manifest>

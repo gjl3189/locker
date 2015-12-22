@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- The color in the file is corresponding to the color defined in the font specifications given by 
+ 	  the UI design team
+ 	  for example, color with name B1_color indicate the font color B1 defined in the specifications.
+-->
+<resources>
+    <color name="w1_color">#ffffff</color>
+    <color name="w1a_color">#ffffff</color>
+    <color name="w1b_color">#ffffff</color>
+    <color name="w1c_color">#ffffff</color>
+    <color name="w1d_color">#ffffff</color>
+    <color name="w3_color">#ffffff</color>
+    <color name="w6_color">#ffffff</color>
+    <color name="w6d_color">#ffffff</color>
+    <color name="w6e_color">#ffffff</color>
+    <color name="w6f_color">#ffffff</color>
+
+    <color name="b1_color">#333333</color>
+    <color name="b1b_color">#333333</color>
+    <color name="b2_color">#565656</color>
+    <color name="b3_color">#5b6573</color>
+    <color name="b2a_color">#565656</color>
+    <color name="b2b_color">#565656</color>
+    <color name="b2c_color">#565656</color>
+    <color name="b2d_color">#565656</color>
+    <color name="b2e_color">#565656</color>
+    
+    <color name="grey1_color">#a2a2a2</color>
+    <color name="grey1a_color">#a2a2a2</color>
+    <color name="grey1b_color">#a2a2a2</color>
+    <color name="grey1c_color">#a2a2a2</color>
+    <color name="grey1d_color">#a2a2a2</color>
+    <color name="grey2_color">#d6d6d6</color>
+    <color name="grey4_color">#bec0c2</color>
+    <color name="grey5_color">#687587</color>
+    
+    <color name="green1_color">#a1bbb7</color>
+    <color name="green2_color">#2ba28d</color>
+    <color name="grey_color_item">#dbdbdb</color>
+    
+    <color name="y1_color">#dd9200</color>
+    <color name="y3c_color">#fee5a1</color>
+
+    <color name="blue1_color">#007AE4</color>
+    <color name="blue1a_color">#2c4773</color>
+    <color name="blue1b_color">#2c4773</color>
+    <color name="blue1c_color">#2c4773</color>
+    <color name="blue1d_color">#2c4773</color>
+    <color name="blue2a_color">#4d7eb3</color>
+    <color name="blue3_color">#007BE5</color>
+    <color name="blue3a_color">#87c1fe</color>
+    <color name="blue3b_color">#87c1fe</color>
+    <color name="blue4_color">#468bed</color>
+    <color name="b5_color">#93dfff</color>
+</resources>

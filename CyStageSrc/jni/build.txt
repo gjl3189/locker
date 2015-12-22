@@ -1,0 +1,3 @@
+ndk-build APP_ABI="armeabi armeabi-v7a x86"
+
+ndk-build APP_ABI="armeabi armeabi-v7a x86 mips"

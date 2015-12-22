@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+  <com.cyou.cma.clockscreen.widget.FontedEditText xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/password_entry"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/selecter_bg_edittext"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#282828" android:text=""
+                android:textSize="21sp" android:paddingBottom="2dp"/>

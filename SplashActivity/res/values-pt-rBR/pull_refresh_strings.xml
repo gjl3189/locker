@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="pull_to_refresh_pull_label">Arraste para atualizar…</string>
+  <string name="pull_to_refresh_release_label">Libere para atualizar…</string>
+  <string name="pull_to_refresh_refreshing_label">Carregando…</string>
+  <string name="pull_to_refresh_from_bottom_pull_label">Arraste para cima para atualizar mais…</string>
+  <string name="pull_to_refresh_from_bottom_release_label">Solte para atualizar mais…</string>
+  <string name="pull_to_refresh_from_bottom_refreshing_label">Carregando…</string>
+</resources>

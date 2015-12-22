@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/folder_cell_width"
+    android:layout_height="@dimen/folder_cell_height"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/adapter_addcommon_touch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp" >
+
+        <ImageView
+            android:id="@+id/adapter_addcommon_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/adapter_addcommon_indicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_app_locked"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/adapter_addcommon_name"
+        style="@style/W1c_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_black87" />
+
+</LinearLayout>

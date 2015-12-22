@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 根据公司安卓字体规范创建的颜色表 -->
+<resources>
+    <color name="w">#ffffff</color>
+    <color name="B1">#333333</color>
+    <color name="B2">#565656</color>
+    <color name="B3">#5b6573</color>
+    <color name="g1">#a2a2a2</color>
+    <color name="g2">#d6d6d6</color>
+    <color name="g3">#808080</color>
+    <color name="g4">#bec0c2</color>
+    <color name="g5">#687587</color>
+    <color name="g6">#b8bcc2</color>
+    <color name="g7">#707070</color>
+    <color name="y1">#dd9200</color>
+    <color name="y2">#ffc560</color>
+    <color name="y3">#fee5a1</color>
+    <color name="b1">#2c4773</color>
+    <color name="b2">#4d7eb3</color>
+    <color name="b3">#87c1fe</color>
+    <color name="b4">#468bed</color>
+    <color name="r">#dd1f00</color>
+
+</resources>

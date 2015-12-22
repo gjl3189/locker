@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerbar_backbtn_height"
+        android:background="@color/settings_statusbar_bg" />
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/settings_headbar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.cyou.cma.clockscreen.widget.material.LImageButton
+                android:id="@+id/imageview_back"
+                android:layout_width="@dimen/headerbar_backbtn_width"
+                android:layout_height="@dimen/headerbar_backbtn_height"
+                android:src="@drawable/icon_header_back_normal"
+                android:tag="imageview_back"
+                locker:widget_delayclick="true"
+                locker:widget_type="left" />
+
+            <TextView
+                android:id="@+id/textview_lockname"
+                style="@style/W1_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.cyou.cma.clockscreen.widget.CyStageClickButton
+                android:id="@+id/imageview_crash"
+                android:layout_width="@dimen/headerbar_backbtn_width"
+                android:layout_height="@dimen/headerbar_backbtn_height"
+                android:src="@drawable/icon_header_themedetail_delete"
+                android:tag="imageview_crash"
+                locker:widget_delayclick="true"
+                locker:widget_type="right" />
+
+            <com.cyou.cma.clockscreen.widget.material.LImageButton
+                android:id="@+id/imageview_setting"
+                android:layout_width="@dimen/headerbar_backbtn_width"
+                android:layout_height="@dimen/headerbar_backbtn_height"
+                android:src="@drawable/icon_header_themedetail_settings"
+                android:tag="imageview_setting"
+                locker:widget_delayclick="true"
+                locker:widget_type="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ececec" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.cyou.cma.clockscreen.widget.LinePageIndicator
+                    android:id="@+id/linePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip" />
+
+                <RelativeLayout
+                    android:id="@+id/pager_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:clipChildren="false"
+                    android:layerType="none" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="48.7dip"
+                        android:layout_marginRight="48.7dip"
+                        android:clipChildren="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94.5dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/update_linearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <com.cyou.cma.clockscreen.widget.material.LButton
+                            android:id="@+id/state_button"
+                            android:layout_width="218dip"
+                            android:layout_height="36dp"
+                            android:gravity="center"
+                            android:tag="state_button"
+                            android:text="Download"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/font_size_16" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/headerbar_bottom_divider" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

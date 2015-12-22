@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_statusbar_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tab_titlebar"
+            layout="@layout/common_header_layout" />
+
+        <TextView
+            android:id="@+id/namefloder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/namefolder"
+            android:textColor="#03a9f4"
+            android:textSize="18sp" />
+
+        <com.cyou.cma.clockscreen.widget.FontedEditText
+            android:id="@+id/folderedit"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/selecter_bg_edittext"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/folderhint"
+            android:singleLine="true"
+            android:textColor="#282828"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/folderhint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/folderhint2"
+            android:textColor="#8A000000"
+            android:textSize="14sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="24dp"
+            android:background="#aeaeae" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp" >
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/apps_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                locker:widget_background="@drawable/apps_textview_background"
+                android:gravity="center"
+                android:text="@string/quick_apps"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                locker:widget_animColor="#ffffffff" >
+            </com.cyou.cma.clockscreen.widget.material.LButton>
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/contacts_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                locker:widget_background="@drawable/contacts_textview_background"
+                android:gravity="center"
+                android:text="@string/quick_contacts"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                locker:widget_animColor="#ffffffff" >
+            </com.cyou.cma.clockscreen.widget.material.LButton>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/tab_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

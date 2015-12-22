@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      The dimen in the file is corresponding to the dimen defined in the font specifications given by 
+ 	  the UI design team
+ 	  for example, dimen with name w1_dimen indicate the font dimen W1 defined in the specifications.
+-->
+
+<resources>
+
+    <dimen name="W1_">94dp</dimen>
+    <dimen name="w1_dimen">18sp</dimen>
+    <dimen name="w1a_dimen">16sp</dimen>
+    <dimen name="w1b_dimen">22sp</dimen>
+    <dimen name="w1c_dimen">12sp</dimen>
+    <dimen name="w1d_dimen">14sp</dimen>
+    <dimen name="w3_dimen">10sp</dimen>
+    <dimen name="w6_dimen">26sp</dimen>
+    <dimen name="w6d_dimen">28sp</dimen>
+    <dimen name="w6e_dimen">15sp</dimen>
+    <dimen name="w6f_dimen">20sp</dimen>
+    <dimen name="b1_dimen">22sp</dimen>
+    <dimen name="b1b_dimen">18sp</dimen>
+    <dimen name="b2_dimen">18sp</dimen>
+    <dimen name="b3_dimen">12sp</dimen>
+    <dimen name="b2a_dimen">16sp</dimen>
+    <dimen name="b2b_dimen">12sp</dimen>
+    <dimen name="b2c_dimen">14sp</dimen>
+    <dimen name="b2d_dimen">10sp</dimen>
+    <dimen name="b2e_dimen">40sp</dimen>
+    <dimen name="grey1_dimen">18sp</dimen>
+    <dimen name="grey1a_dimen">14sp</dimen>
+    <dimen name="grey1b_dimen">16sp</dimen>
+    <dimen name="grey1c_dimen">12sp</dimen>
+    <dimen name="grey1d_dimen">10sp</dimen>
+    <dimen name="grey2_dimen">16sp</dimen>
+    <dimen name="grey4_dimen">16sp</dimen>
+    <dimen name="grey5_dimen">18sp</dimen>
+    <dimen name="green1_dimen">14sp</dimen>
+    <dimen name="green2_dimen">18sp</dimen>
+    <dimen name="y1_dimen">16sp</dimen>
+    <dimen name="y3c_dimen">60sp</dimen>
+    <dimen name="blue1_dimen">20sp</dimen>
+    <dimen name="blue1a_dimen">85sp</dimen>
+    <dimen name="blue1b_dimen">50sp</dimen>
+    <dimen name="blue1c_dimen">45sp</dimen>
+    <dimen name="blue1d_dimen">15sp</dimen>
+    <dimen name="blue2a_dimen">15sp</dimen>
+    <dimen name="blue3_dimen">14sp</dimen>
+    <dimen name="blue3a_dimen">10sp</dimen>
+    <dimen name="blue3b_dimen">12sp</dimen>
+    <dimen name="blue4a_dimen">16sp</dimen>
+    <dimen name="blue4c_dimen">18sp</dimen>
+    <!-- added by lixiaolin for optim -->
+    <dimen name="w4c_dimen">25sp</dimen>
+    <dimen name="b5a_dimen">17sp</dimen>
+    <dimen name="b1g">20sp</dimen>
+
+</resources>

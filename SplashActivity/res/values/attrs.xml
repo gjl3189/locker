@@ -1,0 +1,45 @@
+<resources>
+
+    <declare-styleable name="Summary">
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MissedType">
+        <attr name="type" format="integer" />
+    </declare-styleable>
+
+    <style name="Theme.Translucent" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- dialog -->
+    <attr name="dialogtitleStyle" format="reference" />
+    <attr name="dialogtextStyle" format="reference"></attr>
+    <attr name="buttonBarButtonStyle" format="reference"></attr>
+    <attr name="buttonBarStyle" format="reference"></attr>
+
+    <declare-styleable name="DesktopSetting">
+        <attr name="isLast" format="boolean" />
+    </declare-styleable>
+
+    <attr name="lockpatternviewstyle" format="reference"></attr>
+
+    <declare-styleable name="lockpatternview">
+        <attr name="aspect" format="string"></attr>
+        <attr name="animate" format="boolean"></attr>
+        <attr name="normaldrawable" format="reference"></attr>
+        <attr name="pressdrawable" format="reference"></attr>
+        <attr name="wrongdrawable" format="reference"></attr>
+        <attr name="paintcolor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="tabpageindicator">
+        <attr name="drawunder" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="Advert">
+        <attr name="advertId" format="string" />
+    </declare-styleable>
+
+</resources>

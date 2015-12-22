@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="time_month_one">Jan</string>
+  <string name="time_month_two">Fev</string>
+  <string name="time_month_three">Mar</string>
+  <string name="time_month_four">Abr</string>
+  <string name="time_month_five">Mai</string>
+  <string name="time_month_six">Jun</string>
+  <string name="time_month_seven">Jul</string>
+  <string name="time_month_eight">Ago</string>
+  <string name="time_month_nine">Set</string>
+  <string name="time_month_ten">Out</string>
+  <string name="time_month_eleven">Nov</string>
+  <string name="time_month_twelve">Dez</string>
+  <string name="time_date_description">%1$s.%2$s</string>
+  <string name="time_week_monday">Segunda-feira</string>
+  <string name="time_week_tuesday">Terça-feira</string>
+  <string name="time_week_wednesday">Quarta-feira</string>
+  <string name="time_week_thursday">Quinta-feira</string>
+  <string name="time_week_friday">Sexta-feira</string>
+  <string name="time_week_saturday">Sábado</string>
+  <string name="time_week_sunday">Domingo</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" >
+
+    <com.cyou.cma.clockscreen.widget.LongClickLayout
+        android:id="@+id/lockscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true" />
+    <!-- start add by jiangbin  以后非锁屏界面的view 通过这个FrameLayout查找 避免 类型转换异常 -->
+
+    <FrameLayout
+        android:id="@+id/framelayout_exclude_lockscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- end add by jiangbin  以后非锁屏界面的view 通过这个FrameLayout查找 避免 类型转换异常 -->
+
+        <ViewStub
+            android:id="@+id/lockscreen_menu_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_lockscreen_menu" />
+
+        <FrameLayout
+            android:id="@+id/password_screen_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/password_screen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4c000000"
+                android:focusable="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/notification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1280" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="352" />
+			<LinearLayout  android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="634">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.cyou.cma.clockscreen.widget.SwipeDeleteListView
+                    android:id="@+id/swipe_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="6dp"
+                    android:listSelector="#00000000" android:layout_marginBottom="36dp"/>
+
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp" android:layout_gravity="bottom|right">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/notification_other_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/notification_other_close" />
+                </LinearLayout>
+
+              
+            </FrameLayout>
+</LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="294" />
+        </LinearLayout>
+        <!-- start add by jiangbin  以后非锁屏界面的view 通过这个FrameLayout查找 避免 类型转换异常 -->
+    </FrameLayout>
+    <!-- end add by jiangbin  以后非锁屏界面的view 通过这个FrameLayout查找 避免 类型转换异常 -->
+
+</FrameLayout>

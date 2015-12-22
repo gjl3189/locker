@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/lenovo/vcs/weaver/phone/ui/surprise/menu/LeSpMenuDataHelper.java|com/lenovo/vcs/weaver/phone/ui/surprise/menu/LeSpCheckRunnable.java|com/lenovo/vcs/weaver/phone/ui/surprise/menu/LeZipTool.java|com/cyou/cma/cengine/CyStageMainReceiver.java|com/cyou/cma/cengine/CyStageReceiver.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

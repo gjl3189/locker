@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyou.cma.clockscreen.widget.material.LLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/desktop_setting_item_height"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        locker:widget_animColor="#ffffffff"
+        locker:widget_delayclick="true" >
+
+        <TextView
+            android:id="@+id/adapter_pwdtype_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:minHeight="@dimen/desktop_setting_item_height"
+            android:textColor="@color/selecter_settings_item_text"
+            android:textSize="@dimen/preference_normal_title" />
+
+        <CheckedTextView
+            android:id="@+id/adapter_pwdtype_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:checkMark="@drawable/common_ic_single_select_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/settings_list_diver_bg" />
+
+</com.cyou.cma.clockscreen.widget.material.LLinearLayout>

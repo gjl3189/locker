@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <string-array name="locker_mode">
+        <item>New</item>
+        <item>Local</item>
+    </string-array>
+    <string-array name="applock_title">
+        <item>Setting</item>
+        <item>App Lock</item>
+    </string-array>
+    -->
+    <string-array name="locker_mode">
+        <item>@string/new_mode</item>
+        <item>@string/local_mode</item>
+        <item>@string/quick_launcher</item>
+    </string-array>
+    <string-array name="applock_title">
+        <item>@string/app_setting</item>
+        <item>@string/app_lock</item>
+    </string-array>
+    <string-array name="locker_mode2">
+        <item>@string/new_mode2</item>
+        <item>@string/local_mode2</item>
+        <item>@string/quick_launcher</item>
+    </string-array>
+    <string-array name="quick_folder">
+        <item>@string/quick_app</item>
+        <item>@string/quick_contacts</item>
+    </string-array>
+    <string-array name="dialog_titles">
+        <item>@string/quick_contacts2</item>
+        <item>@string/quick_apps</item>
+        <item>@string/quick_folder</item>
+        <item>@string/quick_delete</item>
+    </string-array>
+    <string-array name="dialog_titles2">
+        <item>@string/quick_contacts2</item>
+        <item>@string/quick_apps</item>
+        <item>@string/quick_folder</item>
+    </string-array>
+
+</resources>

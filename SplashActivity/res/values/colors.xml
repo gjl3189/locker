@@ -1,0 +1,42 @@
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="custom_dialog_diver_list">#dcdcdc</color>
+    <!-- 设置基本界面 -->
+    <color name="settings_statusbar_bg">#0394D6</color>
+    <color name="settings_root_bg">#ffffff</color>
+    <color name="settings_headbar_bg">#03a9f4</color>
+    <color name="settings_list_diver_bg">#dcdcdc</color>
+    <color name="settings_summary_text">#8a000000</color>
+    <color name="settings_item_title_text_disable">#3d000000</color>
+    <color name="settings_item_title_text_normal">#de000000</color>
+    <color name="color_black87">#de000000</color>
+    <color name="color_black54">#8a000000</color>
+    <color name="color_black26">#42000000</color>
+    <color name="color_anim_black">#1d000000</color>
+    <color name="color_anim_white">#1dffffff</color>
+
+    <!-- 壁纸 -->
+    <drawable name="wallpaper_additem_bg_normal">#ffffff</drawable>
+    <drawable name="wallpaper_additem_bg_pressed">#33000000</drawable>
+    <!-- 弹出框 -->
+    <color name="custom_dialog_button_text_normal">#4cb6ff</color>
+    <color name="custom_dialog_button_text_pressed">#ffffff</color>
+    <color name="custom_dialog_button_text_disable">#a2a2a2</color>
+
+
+    <color name="custom_dialog_button_diver_color">#00000000</color>
+    <drawable name="custom_dialog_list_item_pressed">#7dbff2</drawable>
+
+     
+
+    <!-- 美化中心通用titlebar 颜色 -->
+    <color name="beautycenter_tab_background_highlight_color">#efff3e</color>
+
+    
+    
+	
+	 <color name="setting_button_disabled">#4dcccccc</color>
+    <color name="setting_button_normal">#ccffffff</color>
+</resources>

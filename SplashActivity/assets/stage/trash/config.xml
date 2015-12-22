@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<stage>
+    <name></name>
+    <pic>/mnt/sdcard/stageStudio/tong/_cyPic</pic>
+    <pic_name>_cyPic</pic_name>
+    <position>0</position>
+    <width_height>40,60</width_height>
+    <src_scale>0.8,0.8</src_scale>
+    <actor>
+    	<duration>300</duration>
+        <ac_name>default</ac_name>
+        <is_initiative>false</is_initiative>
+        <bone>
+            <rect_ltwhxy>0,0,23,27,11,13</rect_ltwhxy>
+            <ba>
+                <start_end>0.0,1.0</start_end>
+                <alpha>255,255</alpha>
+                <rect_smft>1.0,1.0,1.0,1.0,20,32,20,36</rect_smft>
+                <rect_rotate>0.0,0.0,11,13</rect_rotate>
+            </ba>
+        </bone>
+        <bone>
+            <rect_ltwhxy>25,0,27,6,13,3</rect_ltwhxy>
+            <ba>
+                <start_end>0.0,1.0</start_end>
+                <alpha>255,255</alpha>
+                <rect_smft>1.0,1.0,1.0,1.0,20,19,20,23</rect_smft>
+                <rect_rotate>0.0,-40.0,2,4</rect_rotate>
+            </ba>
+        </bone>
+    </actor>
+</stage>

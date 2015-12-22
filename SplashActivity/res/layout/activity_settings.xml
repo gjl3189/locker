@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyou.cma.clockscreen.widget.CyFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerbar_backbtn_height"
+        android:background="@color/settings_statusbar_bg" />
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_header_layout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/cn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/PreferenceCategoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_base_info" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceCheckBox
+                        android:id="@+id/settings_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_user_lockscreen" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_pwd_lock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_password" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_app_lock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_app_lock" />
+                    
+                      <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_lockscreen_notification"
+                        locker:preference_summary="@string/settings_lockscreen_notification_summary"/>
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_summary="@string/settings_lockscreen_wallpaper_summary"
+                        locker:preference_title="@string/settings_lockscreen_wallpaper" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceCheckBox
+                        android:id="@+id/settings_vibrate_switch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_lockscreen_tools_vibrate" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceCheckBox
+                        android:id="@+id/settings_sound_switch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_title="@string/settings_lockscreen_tools_sound" />
+
+                    <TextView
+                        style="@style/PreferenceCategoryStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_more" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_pro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_pro_title" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_pwd_backup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_password_backup" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_autolock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/settings_auto_lock" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_system_lockscreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_summary="@string/settings_system_lockscreen_summary"
+                        locker:preference_title="@string/settings_system_lockscreen" />
+
+                    <com.cyou.cma.clockscreen.widget.material.PreferenceNormal
+                        android:id="@+id/settings_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        locker:preference_show_divider="false"
+                        locker:preference_title="@string/userfeedback_label" />
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/headerbar_bottom_divider" />
+        </FrameLayout>
+    </LinearLayout>
+
+</com.cyou.cma.clockscreen.widget.CyFrameLayout>

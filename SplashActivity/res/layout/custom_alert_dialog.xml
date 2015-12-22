@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 这里面的值换算成dp都是给定像素除以2.25，而不是除以2.0 -->
+<com.cyou.cma.clockscreen.widget.WeightedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/apps_customize_list_dialog_title_height"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dip"
+                android:src="@null" />
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/color_black87"
+                android:textSize="20sp" />
+
+            <com.cyou.cma.clockscreen.widget.material.LImageButton
+                android:id="@+id/close"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/dialog_close"
+                locker:widget_animColor="#1d000000"
+                locker:widget_delayclick="true" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@color/custom_dialog_button_diver_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/color_black54"
+                android:textSize="16sp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/customPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_divider_height_common"
+        android:background="@color/custom_dialog_button_diver_color" />
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            style="?attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/button3"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:minHeight="@dimen/apps_customize_list_dialog_btn_height"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/blue4a_dimen"
+                locker:widget_animColor="@color/color_anim_black"
+                locker:widget_delayclick="true" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/custom_dialog_button_diver_color" />
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/button2"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:minHeight="@dimen/apps_customize_list_dialog_btn_height"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/blue4a_dimen"
+                locker:widget_animColor="@color/color_anim_black"
+                locker:widget_delayclick="true" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/custom_dialog_button_diver_color" />
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/button1"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:minHeight="@dimen/apps_customize_list_dialog_btn_height"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/blue4a_dimen"
+                locker:widget_animColor="@color/color_anim_black"
+                locker:widget_delayclick="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.cyou.cma.clockscreen.widget.WeightedLinearLayout>

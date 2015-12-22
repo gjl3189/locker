@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色系列 -->
+    <style name="W1_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="W1a_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="W1b_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_22</item>
+    </style>
+
+    <style name="W1c_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    
+
+    <style name="W1d_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="W2_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_30</item>
+    </style>
+
+    <style name="W3_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <style name="W4_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_45</item>
+    </style>
+
+    <style name="W5_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_56</item>
+    </style>
+
+    <style name="W6_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_26</item>
+    </style>
+
+    <style name="W6a_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_75</item>
+    </style>
+
+    <style name="W6b_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_50</item>
+    </style>
+
+    <style name="W6c_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_40</item>
+    </style>
+
+    <style name="W6d_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_28</item>
+    </style>
+
+    <style name="W6e_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_15</item>
+    </style>
+
+    <style name="W6f_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_20</item>
+    </style>
+
+    <style name="W6g_style">
+        <item name="android:textColor">@color/w</item>
+        <item name="android:textSize">@dimen/font_size_25</item>
+    </style>
+
+    <!-- 黑色系列 -->
+    <!-- B1系列 -->
+    <style name="B1_style">
+        <item name="android:textColor">@color/B1</item>
+        <item name="android:textSize">@dimen/font_size_25</item>
+    </style>
+
+    <style name="B1a_style">
+        <item name="android:textColor">@color/B1</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="B1b_style">
+        <item name="android:textColor">@color/B1</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="B1c_style">
+        <item name="android:textColor">@color/B1</item>
+        <item name="android:textSize">@dimen/font_size_20</item>
+    </style>
+
+    <style name="B1d_style">
+        <item name="android:textColor">@color/B1</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+    <!-- B2系列 -->
+    <style name="B2_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="B2a_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="B2b_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="B2c_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="B2d_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <style name="B2e_style">
+        <item name="android:textColor">@color/B2</item>
+        <item name="android:textSize">@dimen/font_size_40</item>
+    </style>
+    <!-- B3系列 -->
+    <style name="B3_style">
+        <item name="android:textColor">@color/B3</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="B3a_style">
+        <item name="android:textColor">@color/B3</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <!-- 灰色系列 -->
+    <!-- G1系列 -->
+    <style name="G1_style">
+        <item name="android:textColor">@color/g1</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="G1a_style">
+        <item name="android:textColor">@color/g1</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="G1b_style">
+        <item name="android:textColor">@color/g1</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="G1c_style">
+        <item name="android:textColor">@color/g1</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="G1d_style">
+        <item name="android:textColor">@color/g1</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <!-- G2-G7系列 -->
+    <style name="G2_style">
+        <item name="android:textColor">@color/g2</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="G3_style">
+        <item name="android:textColor">@color/g3</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="G4_style">
+        <item name="android:textColor">@color/g4</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="G5_style">
+        <item name="android:textColor">@color/g5</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="G6_style">
+        <item name="android:textColor">@color/g6</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="G7_style">
+        <item name="android:textColor">@color/g7</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+    <!-- 黄色系列 -->
+    <style name="y1_style">
+        <item name="android:textColor">@color/y1</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="y2_style">
+        <item name="android:textColor">@color/y2</item>
+        <item name="android:textSize">@dimen/font_size_45</item>
+    </style>
+
+    <style name="y3a_style">
+        <item name="android:textColor">@color/y3</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="y3b_style">
+        <item name="android:textColor">@color/y3</item>
+        <item name="android:textSize">@dimen/font_size_20</item>
+    </style>
+
+    <style name="y3c_style">
+        <item name="android:textColor">@color/y3</item>
+        <item name="android:textSize">@dimen/font_size_75</item>
+    </style>
+    <!-- 蓝色系列 -->
+    <style name="b1a_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_85</item>
+    </style>
+
+    <style name="b1b_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_50</item>
+    </style>
+
+    <style name="b1c_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_45</item>
+    </style>
+
+    <style name="b1d_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_15</item>
+    </style>
+
+    <style name="b1e_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <style name="b1f_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_25</item>
+    </style>
+
+    <style name="b1g_style">
+        <item name="android:textColor">@color/b1</item>
+        <item name="android:textSize">@dimen/font_size_25</item>
+    </style>
+
+    <style name="b2a_style">
+        <item name="android:textColor">@color/b2</item>
+        <item name="android:textSize">@dimen/font_size_15</item>
+    </style>
+
+    <style name="b3a_style">
+        <item name="android:textColor">@color/b3</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <style name="b3b_style">
+        <item name="android:textColor">@color/b3</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="b4a_style">
+        <item name="android:textColor">@color/b4</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="b4b_style">
+        <item name="android:textColor">@color/b4</item>
+        <item name="android:textSize">@dimen/font_size_10</item>
+    </style>
+
+    <style name="b4c_style">
+        <item name="android:textColor">@color/b4</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+    </style>
+
+    <style name="b4d_style">
+        <item name="android:textColor">@color/b4</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="R1_style">
+        <item name="android:textColor">@color/r</item>
+        <item name="android:textSize">@dimen/font_size_45</item>
+    </style>
+
+    <style name="R2_style">
+        <item name="android:textColor">@color/r</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+</resources>

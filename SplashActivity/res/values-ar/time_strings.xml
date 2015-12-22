@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="time_month_one">يناير</string>
+  <string name="time_month_two">فبراير</string>
+  <string name="time_month_three">مارس</string>
+  <string name="time_month_four">إبريل</string>
+  <string name="time_month_five">مايو</string>
+  <string name="time_month_six">يونيو</string>
+  <string name="time_month_seven">يوليو</string>
+  <string name="time_month_eight">أغسطس</string>
+  <string name="time_month_nine">سبتمبر</string>
+  <string name="time_month_ten">أكتوبر</string>
+  <string name="time_month_eleven">نوفمبر</string>
+  <string name="time_month_twelve">ديسمبر</string>
+  <string name="time_date_description">%1$s.%2$s</string>
+  <string name="time_week_monday">يوم الاثنين</string>
+  <string name="time_week_tuesday">يوم الثلاثاء</string>
+  <string name="time_week_wednesday">يوم الأربعاء</string>
+  <string name="time_week_thursday">يوم الخميس</string>
+  <string name="time_week_friday">يوم الجمعة</string>
+  <string name="time_week_saturday">يوم السبت</string>
+  <string name="time_week_sunday">يوم الأحد</string>
+</resources>

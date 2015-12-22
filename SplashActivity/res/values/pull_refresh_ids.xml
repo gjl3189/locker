@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id"/>
+    <!-- 下面两个id是用在RecommendImageView中的setTag(int key,Object obj)方法 -->
+    <item name="recommendimageview_recommend_tag" type="id"/>
+    <item name="recommendimageview_info_tag" type="id"/>
+
+</resources>

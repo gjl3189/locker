@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:advert="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2000000" >
+
+    <com.cyou.cma.clockscreen.widget.CircleMenu
+        android:id="@+id/lockscreen_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <com.cyou.cma.clockscreen.widget.MyAdvertLayout
+        android:id="@+id/myadvertlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        advert:advertId="ca-app-pub-2854917239684978/5480104240" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/folder_container"
+        android:clipChildren="false" />
+
+</FrameLayout>

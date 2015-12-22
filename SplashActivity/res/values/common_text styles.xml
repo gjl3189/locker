@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      The text style in the file is corresponding to the style defined in the font specifications given by 
+ 	  the UI design team
+ 	  for example, style with name w1a_text_style indicate the font W1a defined in the specifications.
+
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="w1_text_style">
+        <item name="android:textColor">@color/w1_color</item>
+        <item name="android:textSize">@dimen/w1_dimen</item>
+    </style>
+
+    <style name="w1a_text_style">
+        <item name="android:textColor">@color/w1a_color</item>
+        <item name="android:textSize">@dimen/w1a_dimen</item>
+    </style>
+
+    <style name="w1b_text_style">
+        <item name="android:textColor">@color/w1b_color</item>
+        <item name="android:textSize">@dimen/w1b_dimen</item>
+    </style>
+
+    <style name="w1c_text_style">
+        <item name="android:textColor">@color/w1c_color</item>
+        <item name="android:textSize">@dimen/w1c_dimen</item>
+    </style>
+
+    <style name="w1d_text_style">
+        <item name="android:textColor">@color/w1d_color</item>
+        <item name="android:textSize">@dimen/w1d_dimen</item>
+    </style>
+
+    <style name="w6d_text_style">
+        <item name="android:textColor">@color/w6d_color</item>
+        <item name="android:textSize">@dimen/w6d_dimen</item>
+    </style>
+
+    <style name="b1_text_style">
+        <item name="android:textColor">@color/b1_color</item>
+        <item name="android:textSize">@dimen/b1_dimen</item>
+    </style>
+
+    <style name="b2_text_style">
+        <item name="android:textColor">@drawable/selecter_preference_title</item>
+        <item name="android:textSize">@dimen/b2_dimen</item>
+    </style>
+
+    <style name="b2a_text_style">
+        <item name="android:textColor">@color/b2a_color</item>
+        <item name="android:textSize">@dimen/b2a_dimen</item>
+    </style>
+   
+    <style name="grey1_text_style">
+        <item name="android:textColor">@color/grey1_color</item>
+        <item name="android:textSize">@dimen/grey1_dimen</item>
+    </style>
+
+    <style name="grey1a_text_style">
+        <item name="android:textColor">@color/grey1a_color</item>
+        <item name="android:textSize">@dimen/grey1a_dimen</item>
+    </style>
+
+    <style name="grey1b_text_style">
+        <item name="android:textColor">@color/grey1b_color</item>
+        <item name="android:textSize">@dimen/grey1b_dimen</item>
+    </style>
+
+    <style name="grey1c_text_style">
+        <item name="android:textColor">@color/grey1c_color</item>
+        <item name="android:textSize">@dimen/grey1c_dimen</item>
+    </style>
+
+    <style name="grey2_text_style">
+        <item name="android:textColor">@color/grey2_color</item>
+        <item name="android:textSize">@dimen/grey2_dimen</item>
+    </style>
+
+    <style name="grey4_text_style">
+        <item name="android:textColor">@color/grey4_color</item>
+        <item name="android:textSize">@dimen/grey4_dimen</item>
+    </style>
+
+    <style name="grey5_text_style">
+        <item name="android:textColor">@color/grey5_color</item>
+        <item name="android:textSize">@dimen/grey5_dimen</item>
+    </style>
+    
+
+    <style name="green1_text_style">
+        <item name="android:textColor">@color/green1_color</item>
+        <item name="android:textSize">@dimen/green1_dimen</item>
+    </style>
+
+    <style name="green2_text_style">
+        <item name="android:textColor">@color/green2_color</item>
+        <item name="android:textSize">@dimen/green2_dimen</item>
+    </style>
+
+    <style name="y1_text_style">
+        <item name="android:textColor">@color/y1_color</item>
+        <item name="android:textSize">@dimen/y1_dimen</item>
+    </style>
+
+</resources>

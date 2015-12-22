@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settings_statusbar_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tab_titlebar"
+            layout="@layout/common_header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/settings_root_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/desktop_setting_item_height"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="25dp"
+                android:text="@string/mailbackup_hint"
+                android:textColor="@color/selecter_settings_item_text"
+                android:textSize="@dimen/preference_normal_title" />
+
+            <com.cyou.cma.clockscreen.widget.FontedEditText
+                android:id="@+id/password_entry"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/selecter_bg_edittext"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:textColor="#282828"
+                android:textSize="21sp" />
+
+            <com.cyou.cma.clockscreen.widget.material.LButton
+                android:id="@+id/send"
+                android:layout_width="218dip"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                locker:widget_background="@drawable/statebutton_download"
+                android:gravity="center"
+                android:text="@string/mailbackup_send"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/font_size_16"
+                locker:widget_delayclick="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cyou.cma.cengine.CyStageView
+        android:id="@+id/activity_guide_backup_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#90000000"
+        android:visibility="invisible" />
+
+</FrameLayout>

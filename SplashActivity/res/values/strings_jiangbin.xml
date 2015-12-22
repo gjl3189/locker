@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="quick_launcher">Launch Bar</string>
+    <string name="launch_bar_tip">Click on the appropriate place to set application of rapid entry!</string>
+    <string name="quick_launch_title">Select the type</string>
+    <string name="quick_app">Quick Apps</string>
+    <string name="quick_contacts">Quick Contact</string>
+    <string name="been_setted">Have been set</string>
+    <string name="namefolder">Name the floder</string>
+    <string name="folderhint">Folder<xliff:g id="number">%d</xliff:g></string>
+    <string name="folderhint2">Select apps you want to add (<xliff:g id="number">%d</xliff:g>/8)</string>
+    <string name="most_eight">You can add at most eight apps </string>
+    <string name="dialog_title">Select the type</string>
+    <string name="quick_contacts2">Contacts</string>
+    <string name="quick_apps">Apps</string>
+    <string name="quick_delete">Delete</string>
+    <string name="quick_folder">Folder</string>
+    <string name="dialog_notice">Notice</string>
+    <string name="dialog_switch">Switch the type will delete the original message!</string>
+    <string name="others">Others</string>
+    <string name="quick_launch_bar">Quick launch bar</string>
+    <string name="quick_tip">Long press lockscreen interface to enter quick launch bar!</string>
+    <string name="default_password_applock">Default is App lock PIN </string>
+    <string name="keyguard_accessibility_service_description">PopLocker accessibility service</string>
+    <string name="settings_lockscreen_notification_summary">Show your apps\' notifications on lockscreen</string>
+    <string name="settings_lockscreen_notification">Apps\' Notification</string>
+    <string name="notification_application_message">Application Message</string>
+    <string name="notification_application_message_summary">Applications can be displayed in timely remind of the lock screen</string>
+    <string name="choose">Choose</string>
+    <string name="apps">apps</string>
+    <string name="select_all">Select</string>
+    <string name="notification_title">Notification</string>
+    <string name="notification_tip">Notification Function</string>
+    <string name="notification_tip_content">Swipe to experience Pop Locker notification push service.</string>
+    <string name="access_tip">Click Pop Locker to enable this function first!</string>
+    
+    <!-- 广告加的 -->
+    <string name="ad_unit_id">ca-app-pub-2854917239684978/5047419042</string>
+      <string name="ad_inters_unit_id">ca-app-pub-2854917239684978/2166711046</string>
+    <string name="load_interstitial">Load Interstitial</string>
+    <string name="interstitial_not_ready">Interstitial Not Ready</string>
+    <string name="banner_in_xml">Banner in XML</string>
+    <string name="banner_in_code">Banner in Code</string>
+    <string name="interstitial">Interstitial</string>
+
+</resources>

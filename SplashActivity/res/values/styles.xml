@@ -1,0 +1,163 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- dialog style -->
+    <style name="customDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/common_apps_dialog_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+        <item name="dialogtitleStyle">@style/dialog_title_style</item>
+        <item name="dialogtextStyle">@style/dialog_text_style</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="ButtonBar"></style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17.0sp</item>
+    </style>
+
+    <style name="dialog_title_style" parent="@style/w1_text_style"></style>
+
+    <style name="dialog_text_style" parent="@style/b2_text_style">
+        <item name="android:textColor">@drawable/dialog_list_item_text_color</item>
+    </style>
+
+    <style name="CustomUpdateDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ThemeAboutTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7e8892</item>
+    </style>
+
+    <style name="ThemeAboutDownTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#7e8892</item>
+    </style>
+
+    <style name="blue4c_text_style">
+        <item name="android:textColor">@color/blue4_color</item>
+        <item name="android:textSize">@dimen/blue4c_dimen</item>
+    </style>
+
+    <style name="Theme.MyDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="notification.progress" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+
+    <style name="gridview_stylebar">
+        <item name="android:scrollbarThumbVertical">@drawable/icon_scrollbar</item>
+        <item name="android:scrollbarSize">228dp</item>
+    </style>
+
+    <style name="ativity_to_ativityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter2</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit2</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter2</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit2</item>
+    </style>
+
+    <!-- 从次Activity切换到其他Activity的效果 -->
+    <!-- parent="@android:style/Theme.NoTitleBar" -->
+    <style name="act_in_anim_no_title">
+        <item name="android:windowAnimationStyle">@style/ativity_to_ativityAnimation</item>
+    </style>
+
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Widget.IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="skynotification"></style>
+
+    <style name="skynotification.title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="skynotification.content">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="skynotification.percent">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="skynotification.progress" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/sky_progress_horizontal</item>
+    </style>
+    <!-- Password 解锁界面 -->
+    <style name="PIN_NUMBER_BUTTON">
+        <item name="android:layout_width">63dp</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:textColor">@color/selector_setting_numpad_button</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="SECURITY_CONFIGURE_BUTTON">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/selector_setting_security_button</item>
+        <item name="android:background">@drawable/button_underline_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

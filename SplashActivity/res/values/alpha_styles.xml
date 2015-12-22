@@ -1,0 +1,11 @@
+<resources>
+    <!-- Alpha -->
+    <style name="Theme.Holo.NoActionBar.Alpha.Activity" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+       	<item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+</resources>

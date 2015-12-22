@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+         />
+
+    <View android:visibility="gone"
+        android:id="@+id/view_foreground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#4c000000" />
+
+</RelativeLayout>

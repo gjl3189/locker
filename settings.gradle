@@ -1,0 +1,3 @@
+include ':SplashActivity'
+include ':CyStageSrc'
+include ':google-play-services_lib'

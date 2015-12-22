@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbars="none" android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/W1_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/theme_details"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/font_size_20" />
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:shrinkColumns="2" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/lable_designer"
+                        style="@style/W1d_style"
+                        android:text="@string/designer"
+                        android:textColor="@color/color_black87" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="fill_parent" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textview_designer"
+                        style="@style/G1a_style"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black54" />
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/lable_size"
+                        style="@style/W1d_style"
+                        android:text="@string/size"
+                        android:textColor="@color/color_black87" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="fill_parent" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textview_size"
+                        style="@style/G1a_style"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black54" />
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dp" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="true" >
+
+                    <TextView
+                        android:id="@+id/lable_date"
+                        style="@style/W1d_style"
+                        android:text="@string/date"
+                        android:textColor="@color/color_black87" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="fill_parent" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textview_date"
+                        style="@style/G1a_style"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/color_black54" />
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/lable_download"
+                        style="@style/W1d_style"
+                        android:text="@string/download"
+                        android:textColor="@color/color_black87" />
+
+                    <View
+                        android:id="@+id/lable_view"
+                        android:layout_width="4dp"
+                        android:layout_height="fill_parent" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textview_download"
+                        style="@style/G1a_style"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black54" />
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dp" />
+
+               <!--  <TableRow>
+
+                    <TextView
+                        style="@style/W1d_style"
+                        android:text="@string/theme_version_name"
+                        android:textColor="@color/color_black87" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="fill_parent" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textview_version_name"
+                        style="@style/G1a_style"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black54" />
+                </TableRow> -->
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/lable_theme_introducction"
+                style="@style/W1d_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/theme_introduction"
+                android:textColor="@color/color_black87" />
+
+            <TextView
+                android:id="@+id/textview_theme_introducction"
+                style="@style/G1a_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/color_black54" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_foreground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#4c000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

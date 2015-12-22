@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:locker="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.cynad.cma.locker"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_statusbar_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ececec"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tab_titlebar"
+            layout="@layout/common_header_layout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.cyou.cma.clockscreen.widget.TabPageIndicator
+                    android:id="@+id/tab_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="#3fc4ff"  app:drawunder="true"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/tab_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/headerbar_bottom_divider" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
